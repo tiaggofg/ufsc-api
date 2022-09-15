@@ -18,10 +18,10 @@ public class TestConfiguration implements CommandLineRunner {
 	private ClientRepository clientRepository;
 	
 	public void run(String... args) {
-		var c1 = new ClientModel(null, "Obi Wan Kenobi", "kenobi@gmail.com", "49989013490", "@fjw0189");
-		var c2 = new ClientModel(null, "Darth Vader", "vader@imperio.com", "000000000", "$yxzW66");
-		var c3 = new ClientModel(null, "Mestre Yoda", "yoda@outlook.com", "7833097600", "&56kq9*Al");
-		var c4 = new ClientModel(null, "Luke Skywalker", "lukeo@gmail.com", "1102437992", "4hf6!Kh");
+		var c1 = new ClientModel("Obi Wan Kenobi", "kenobi@gmail.com", "49989013490", "@fjw0189");
+		var c2 = new ClientModel("Darth Vader", "vader@imperio.com", "000000000", "$yxzW66");
+		var c3 = new ClientModel("Mestre Yoda", "yoda@outlook.com", "7833097600", "&56kq9*Al");
+		var c4 = new ClientModel("Luke Skywalker", "lukeo@gmail.com", "1102437992", "4hf6!Kh");
 		
 		clientRepository.saveAll(Arrays.asList(c1, c2, c3, c4));
 	}
